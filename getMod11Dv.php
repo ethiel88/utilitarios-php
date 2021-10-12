@@ -30,7 +30,11 @@ function getMod11Dv( $num, $retorno_10='K' ){
    $dv = 11 - ($sum % 11);
    if ( $dv < 10 )
    {
-      return $dv;
+     return $dv;
+   }
+   if ( $dv == 11 )
+   {
+     return 0;
    }
    return $retorno_10;
 }
