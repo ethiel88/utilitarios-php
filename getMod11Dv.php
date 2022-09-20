@@ -10,7 +10,7 @@
 
 function getMod11Dv( $num, $retorno_10='K' ){
 /* --------------------------------------------------------------------------------------- */
-   $digits = str_replace( array( '.', ',' ), array( ''.'' ), strrev($num ) );
+   $digits = str_replace( array( '.', ',' ), array( '','' ), strrev($num ) );
    if ( ! ctype_digit( $digits ) )
    {
       return false;
